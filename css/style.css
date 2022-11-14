@@ -7,7 +7,7 @@ body {
     background: #15181a;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
-.skw-pages {
+.pages {
     overflow: hidden;
     position: relative;
     height: 100vh;
@@ -25,6 +25,7 @@ body {
     height: 100vh;
     transition: transform 1s;
 }
+
 .skw-page__half--left {
     left: 0;
     transform: translate3d(-32.4vh, 100%, 0);
@@ -36,7 +37,7 @@ body {
 .skw-page.active .skw-page__half {
     transform: translate3d(0, 0, 0);
 }
-.skw-page__skewed {
+.Metade {
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -45,16 +46,16 @@ body {
     transform: skewX(-18deg);
     background: #000;
 }
-.skw-page__half--left .skw-page__skewed {
+.skw-page__half--left .Metade {
     left: -40%;
 }
-.skw-page__half--right .skw-page__skewed {
+.skw-page__half--right .Metade {
     right: -40%;
 }
-.skw-page__content {
+.content {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-flow: column wrap;
     position: absolute;
     left: 0;
@@ -67,66 +68,78 @@ body {
     transition: transform 1s, opacity 1s;
     background-size: cover;
 }
-.skw-page__half--left .skw-page__content {
+.skw-page__half--left .content {
     padding-left: 30%;
     padding-right: 30%;
     transform-origin: 100% 0;
 }
-.skw-page__half--right .skw-page__content {
+.skw-page__half--right .content {
     padding-left: 30%;
     padding-right: 30%;
     transform-origin: 0 100%;
 }
-.skw-page.inactive .skw-page__content {
+.skw-page.inactive .content {
     opacity: 0.5;
     transform: skewX(18deg) scale(0.95);
 }
-.skw-page__heading {
+.Titulo_pg1
+{
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: center;
+}
+.paragrafo_pg1 {
+    font-size: 40px;
+    text-align: center;
+}
+.titulo {
     margin-bottom: 15px;
     text-transform: uppercase;
     font-size: 25px;
-    text-align: center;
+    
 }
-.skw-page__description {
-    font-size: 18px;
-    text-align: center;
+.paragrafo2 {
+    font-size: 22px;  
+}
+.paragrafo {
+    font-size: 18px;  
 }
 .skw-page__link {
     color: #ffa0a0;
 }
-.skw-page-1 .skw-page__half--left .skw-page__content {
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/mousover-img-1.jpg');
-}
-.skw-page-1 .skw-page__half--right .skw-page__content {
+
+.skw-page-1 .skw-page__half--right .content {
     background: #292929;
 }
-.skw-page-2 .skw-page__half--left .skw-page__content {
+.skw-page-2 .skw-page__half--left .content {
     background: #292929;
 }
-.skw-page-2 .skw-page__half--right .skw-page__content {
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/slider-2.jpg');
+.skw-page-2 .skw-page__half--right .content {
+    background: #292929;
+    width: 70%;
 }
-.skw-page-3 .skw-page__half--left .skw-page__content {
+.skw-page-3 .skw-page__half--left .content {
     background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/mousover-img-2.jpg');
 }
-.skw-page-3 .skw-page__half--right .skw-page__content {
+.skw-page-3 .skw-page__half--right .content {
     background: #292929;
 }
-.skw-page-4 .skw-page__half--left .skw-page__content {
+.skw-page-4 .skw-page__half--left .content {
     background: #292929;
 }
-.skw-page-4 .skw-page__half--right .skw-page__content {
+.skw-page-4 .skw-page__half--right .content {
     background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/sections-3.jpg');
 }
-.skw-page-5 .skw-page__half--left .skw-page__content {
+.skw-page-5 .skw-page__half--left .content {
     background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/img-test.jpg');
 }
-.skw-page-5 .skw-page__half--right .skw-page__content {
+.skw-page-5 .skw-page__half--right .content {
     background: #292929;
 }
-.skw-page-6 .skw-page__half--left .skw-page__content {
+.skw-page-6 .skw-page__half--left .content {
     background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/mousover-img-1.jpg');
 }
-.skw-page-6 .skw-page__half--right .skw-page__content {
+.skw-page-6 .skw-page__half--right .content {
     background: #292929;
 }
